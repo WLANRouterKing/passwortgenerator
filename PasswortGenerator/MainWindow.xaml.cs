@@ -3,6 +3,7 @@ using System.Windows;
 using AutoUpdaterDotNET;
 using Sodium;
 using PasswortGenerator.Classes;
+using System.Text;
 
 namespace PasswortGenerator
 {
@@ -26,7 +27,7 @@ namespace PasswortGenerator
             settings = new Settings();
             Init();
             AutoUpdater.AppTitle = "Passwort Generator";
-            AutoUpdater.Start(settings.GetUpdateUrl());
+            AutoUpdater.Start(Encoding.UTF8.GetString(Convert.FromBase64String(settings.GetUpdateUrl())));
         }
 
         /// <summary>

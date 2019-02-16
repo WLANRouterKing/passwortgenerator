@@ -21,7 +21,7 @@
       <Value Profile="(Default)">+-=_@#$%^&amp;;:,.&lt;&gt;/~\[](){}?!|*</Value>
     </Setting>
     <Setting Name="UpdateUrl" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://passwordgenerator.alexweese.de/update.xml</Value>
+      <Value Profile="(Default)">aHR0cHM6Ly9wYXNzd29yZGdlbmVyYXRvci5hbGV4d2Vlc2UuZGUvdXBkYXRlLnhtbA==</Value>
     </Setting>
   </Settings>
 </SettingsFile>

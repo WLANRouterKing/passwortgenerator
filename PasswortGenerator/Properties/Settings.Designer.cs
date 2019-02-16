@@ -97,7 +97,7 @@ namespace PasswortGenerator.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://passwordgenerator.alexweese.de/update.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("aHR0cHM6Ly9wYXNzd29yZGdlbmVyYXRvci5hbGV4d2Vlc2UuZGUvdXBkYXRlLnhtbA==")]
         public string UpdateUrl {
             get {
                 return ((string)(this["UpdateUrl"]));
