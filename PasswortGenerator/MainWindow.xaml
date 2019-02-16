@@ -27,14 +27,15 @@
                     <Label Content="Passwortrichtlinie" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="128" FontWeight="Bold" Grid.ColumnSpan="2"/>
                     <Label Content="Standard Passwortlänge" HorizontalAlignment="Left" Margin="19,53,0,0" VerticalAlignment="Top" Width="166" Padding="0,5,5,5" UseLayoutRounding="True" Grid.ColumnSpan="2"/>
                     <Label Content="Erlaubte Sonderzeichen" HorizontalAlignment="Left" Margin="19,86,0,0" VerticalAlignment="Top" Width="166" Padding="0,5,5,5" UseLayoutRounding="True" Grid.ColumnSpan="2"/>
-                    <CheckBox x:Name="LowercaseCheckbox" Content="Kleinbuchstaben mit einbeziehen" HorizontalAlignment="Left" Margin="19,119,0,0" VerticalAlignment="Top" Width="448" FlowDirection="RightToLeft" HorizontalContentAlignment="Right" Grid.ColumnSpan="2" />
-                    <CheckBox x:Name="UppercaseCheckbox" Content="Großbuchstaben mit einbeziehen" HorizontalAlignment="Left" Margin="19,141,0,0" VerticalAlignment="Top" Width="448" FlowDirection="RightToLeft" HorizontalContentAlignment="Right" Grid.ColumnSpan="2" />
-                    <CheckBox x:Name="NumberCheckbox" Content="Zahlen mit einbeziehen" HorizontalAlignment="Left" Margin="19,163,0,0" VerticalAlignment="Top" Width="448" FlowDirection="RightToLeft" HorizontalContentAlignment="Right" Grid.ColumnSpan="2" />
-                    <CheckBox x:Name="SpecialcharsCheckbox" Content="Sonderzeichen mit einbeziehen" HorizontalAlignment="Left" Margin="19,185,0,0" VerticalAlignment="Top" Width="448" FlowDirection="RightToLeft" HorizontalContentAlignment="Right" Grid.ColumnSpan="2" />
+                    <CheckBox x:Name="LowercaseCheckbox" Content="Kleinbuchstaben mit einbeziehen" HorizontalAlignment="Left" Margin="19,119,0,0" VerticalAlignment="Top" Width="449" FlowDirection="RightToLeft" HorizontalContentAlignment="Right" Grid.ColumnSpan="2" />
+                    <CheckBox x:Name="UppercaseCheckbox" Content="Großbuchstaben mit einbeziehen" HorizontalAlignment="Left" Margin="19,141,0,0" VerticalAlignment="Top" Width="450" FlowDirection="RightToLeft" HorizontalContentAlignment="Right" Grid.ColumnSpan="2" />
+                    <CheckBox x:Name="NumberCheckbox" Content="Zahlen mit einbeziehen" HorizontalAlignment="Left" Margin="19,163,0,0" VerticalAlignment="Top" Width="450" FlowDirection="RightToLeft" HorizontalContentAlignment="Right" Grid.ColumnSpan="2" />
+                    <CheckBox x:Name="SpecialcharsCheckbox" Content="Sonderzeichen mit einbeziehen" HorizontalAlignment="Left" Margin="19,180,0,0" VerticalAlignment="Top" Width="450" FlowDirection="RightToLeft" HorizontalContentAlignment="Right" Grid.ColumnSpan="2" Padding="0,-1,0,0" UseLayoutRounding="True" Height="22" />
                     <TextBox x:Name="AllowedSpecialcharsTextbox" HorizontalAlignment="Left" Height="23" Margin="197,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" Grid.Column="1" />
                     <TextBox x:Name="DefaultPasswordlengthTextbox" HorizontalAlignment="Left" Height="23" Margin="197,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" Grid.Column="1" />
                     <Button x:Name="SaveSettingsButton" Content="Speichern" HorizontalAlignment="Left" Margin="19,242,0,0" VerticalAlignment="Top" Width="84" Height="28" Grid.ColumnSpan="2" Click="SaveSettingsButton_Click"/>
-                    <Label x:Name="SettingsResponseLabel" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="128,242,0,0" VerticalAlignment="Top" Width="607"/>
+                    <Label x:Name="SettingsResponseLabel" Content="" HorizontalAlignment="Left" Margin="19,344,0,0" VerticalAlignment="Top" Width="749" Grid.ColumnSpan="2"/>
+                    <Button x:Name="ResetSettingsButton" Content="Einstellungen zurücksetzen" Grid.Column="1" HorizontalAlignment="Left" Margin="80,242,0,0" VerticalAlignment="Top" Width="188" Height="28" Click="ResetSettingsButton_Click"/>
                 </Grid>
             </TabItem>
         </TabControl>

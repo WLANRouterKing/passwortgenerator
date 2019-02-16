@@ -119,5 +119,19 @@ namespace PasswortGenerator
                 SettingsResponseLabel.Content = ex.Message;
             }
         }
+
+        private void ResetSettingsButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                settings.Reset();
+                Init();
+                SettingsResponseLabel.Content = "Einstellungen erfolgreich zurück gesetzt";
+            }
+            catch(Exception ex)
+            {
+                SettingsResponseLabel.Content = ex.Message;
+            }
+        }
     }
 }

@@ -183,15 +183,14 @@
         /// </summary>
         public void Reset()
         {
+            SetUseLowercase(true);
+            SetUseUppercase(true);
+            SetUseNumbers(true);
+            SetUseSpecialchars(true);
+            SetDefaultPasswordlength(16);
+            SetAllowedSpecialchars(@"+-=_@#$%^&;:,.<>/~\[](){}?!|*");
             Properties.Settings.Default.Reset();
-            Properties.Settings.Default.UseLowercase = true;
-            Properties.Settings.Default.UseUppercase = true;
-            Properties.Settings.Default.UseNumbers = true;
-            Properties.Settings.Default.UseSpecialchars = true;
-            Properties.Settings.Default.DefaultPasswordlength = 16;
-            Properties.Settings.Default.AllowedSpecialchars = @"+-=_@#$%^&;:,.<>/~\[](){}?!|*";
-            Properties.Settings.Default.Save();
-            Properties.Settings.Default.Reload();
+            Save();
         }
 
         /// <summary>
