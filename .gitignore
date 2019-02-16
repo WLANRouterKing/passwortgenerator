@@ -1,0 +1,5 @@
+.vs/
+packages/
+PasswortGenerator.sln
+PasswortGenerator/bin
+PasswortGenerator/obj
