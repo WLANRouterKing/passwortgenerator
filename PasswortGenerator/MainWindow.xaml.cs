@@ -88,6 +88,7 @@ namespace PasswortGenerator
             {
                 int random = SodiumCore.GetRandomNumber(characters.Length);
                 char c = characters[random];
+
                 password += c;
             }
 
