@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Windows;
+using System.Text;
 using AutoUpdaterDotNET;
 using Sodium;
 using PasswortGenerator.Classes;
-using System.Text;
+using System.Windows.Threading;
 
 namespace PasswortGenerator
 {
@@ -28,6 +29,12 @@ namespace PasswortGenerator
             Init();
             AutoUpdater.AppTitle = "Passwort Generator";
             AutoUpdater.Start(Encoding.UTF8.GetString(Convert.FromBase64String(settings.GetUpdateUrl())));
+            DispatcherTimer timer = new DispatcherTimer { Interval = TimeSpan.FromMinutes(30) };
+            timer.Tick += delegate
+            {
+                AutoUpdater.Start(Encoding.UTF8.GetString(Convert.FromBase64String(settings.GetUpdateUrl())));
+            };
+            timer.Start();
         }
 
         /// <summary>
@@ -35,6 +42,8 @@ namespace PasswortGenerator
         /// </summary>
         private void Init()
         {
+            CopyrightLabel.Content = String.Format("Copyright {0} Alexander Weese", DateTime.Now.Year.ToString());
+
             if (settings.GetUseLowercase() == true)
             {
                 LowercaseCheckbox.IsChecked = true;
@@ -133,6 +142,11 @@ namespace PasswortGenerator
             {
                 SettingsResponseLabel.Content = ex.Message;
             }
+        }
+
+        private void SourceCodeLabel_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://bitbucket.org/LXkennstenich/passwortgenerator");
         }
     }
 }

@@ -19,7 +19,7 @@
                 </Grid>
             </TabItem>
             <TabItem x:Name="SettingsTab" Header="Einstellungen">
-                <Grid Background="#FFE5E5E5" HorizontalAlignment="Left">
+                <Grid Background="#FFE5E5E5" HorizontalAlignment="Left" Margin="0,0,-3,0" Width="789">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="41*"/>
                         <ColumnDefinition Width="745*"/>
@@ -34,8 +34,10 @@
                     <TextBox x:Name="AllowedSpecialcharsTextbox" HorizontalAlignment="Left" Height="23" Margin="197,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" Grid.Column="1" />
                     <TextBox x:Name="DefaultPasswordlengthTextbox" HorizontalAlignment="Left" Height="23" Margin="197,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" Grid.Column="1" />
                     <Button x:Name="SaveSettingsButton" Content="Speichern" HorizontalAlignment="Left" Margin="19,242,0,0" VerticalAlignment="Top" Width="84" Height="28" Grid.ColumnSpan="2" Click="SaveSettingsButton_Click"/>
-                    <Label x:Name="SettingsResponseLabel" Content="" HorizontalAlignment="Left" Margin="19,344,0,0" VerticalAlignment="Top" Width="749" Grid.ColumnSpan="2"/>
+                    <Label x:Name="SettingsResponseLabel" Content="" HorizontalAlignment="Left" Margin="19,284,0,0" VerticalAlignment="Top" Width="749" Grid.ColumnSpan="2"/>
                     <Button x:Name="ResetSettingsButton" Content="Einstellungen zurücksetzen" Grid.Column="1" HorizontalAlignment="Left" Margin="80,242,0,0" VerticalAlignment="Top" Width="188" Height="28" Click="ResetSettingsButton_Click"/>
+                    <Label x:Name="CopyrightLabel" Content="" HorizontalAlignment="Left" Margin="19,317,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="290"/>
+                    <Label x:Name="SourceCodeLabel" Content="Quellcode auf Bitbucket" Grid.Column="1" HorizontalAlignment="Left" Margin="556,317,0,0" VerticalAlignment="Top" Width="171" MouseLeftButtonDown="SourceCodeLabel_MouseLeftButtonDown"/>
                 </Grid>
             </TabItem>
         </TabControl>
